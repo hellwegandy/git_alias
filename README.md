@@ -19,7 +19,7 @@ Some of my most used git aliases
     cam = !git add -A && git commit -am
     ca = !git add -A && git commit -a
     go = checkout
-    last = log -1 HEAD
+    lastc = log -1 HEAD
     lastd = diff HEAD^..HEAD --word-diff
     lasts = diff HEAD^..HEAD --name-only
     uncommit = reset HEAD^1
