@@ -12,6 +12,12 @@ Some of my most used git aliases
 
     # stops a file from being hidden by commits or adds
     unhide = update-index --no-assume-unchanged
+    
+    # get the current branch name, used mostly in other aliases
+    current = rev-parse --abbrev-ref HEAD
+
+    # update with master,
+    uwm = !CURRENT=$(git current) && git checkout master && git pull && git checkout $CURRENT && git merge master
 
     d = diff --word-diff
     s = status
