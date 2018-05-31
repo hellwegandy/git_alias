@@ -7,7 +7,7 @@ Some of my most used git aliases
 show-hidden = !git ls-files -v | grep '^[[:lower:]]' | cut -f2 -d' '
 hidden = !git ls-files -v | grep '^[[:lower:]]' | cut -f2 -d' '
 
-# hides a files from commits or adds
+# hides a file from commits or adds
 hide = update-index --assume-unchanged
 
 # stops a file from being hidden by commits or adds
