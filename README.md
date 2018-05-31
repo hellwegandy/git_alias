@@ -27,6 +27,6 @@ Some of my most used git aliases
     # get the current branch name, used mostly in other aliases
     current = rev-parse --abbrev-ref HEAD
 
-    # update with master,
+    # update with master
     uwm = !CURRENT=$(git current) && git checkout master && git pull && git checkout $CURRENT && git merge master
 ```
