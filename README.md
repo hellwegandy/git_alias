@@ -13,13 +13,14 @@ Some of my most used git aliases
     # stops a file from being hidden by commits or adds
     unhide = update-index --no-assume-unchanged
 
-    d = diff
+    d = diff --word-diff
     s = status
     c = commit
     cam = !git add -A && git commit -am
     ca = !git add -A && git commit -a
     go = checkout
     last = log -1 HEAD
-    lastd = diff HEAD^..HEAD
+    lastd = diff HEAD^..HEAD --word-diff
+    lasts = diff HEAD^..HEAD --name-only
     uncommit = reset HEAD^1
 ```
