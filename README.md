@@ -3,9 +3,9 @@ Some of my most used git aliases
 
 ```gitconfig
 [alias]
-    # show-hidden and hidden are the same, currently prints the file path relative to repository root
+    # prints the file path relative to repository root
     show-hidden = !git ls-files -v | grep '^[[:lower:]]' | cut -f2 -d' '
-    hidden = !git ls-files -v | grep '^[[:lower:]]' | cut -f2 -d' '
+    hidden = !git show-hidden
 
     # hides a file from commits or adds
     hide = update-index --assume-unchanged
