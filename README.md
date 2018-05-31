@@ -12,5 +12,6 @@ d = diff
 s = status
 c = commit
 cam = !git add -A && git commit -am
+ca = !git add -A && git commit -a
 go = checkout
 ```
