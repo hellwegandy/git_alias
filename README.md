@@ -13,6 +13,8 @@ Some of my most used git aliases
     lastd = diff HEAD^..HEAD --word-diff
     lasts = diff HEAD^..HEAD --name-only
     uncommit = reset HEAD^1
+    uc = reset HEAD^1
+    patch = commit -a --amend --no-edit
 
     # prints the file path relative to repository root
     show-hidden = !git ls-files -v | grep '^[[:lower:]]' | cut -f2 -d' '
