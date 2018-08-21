@@ -30,5 +30,5 @@ Some of my most used git aliases
     current = rev-parse --abbrev-ref HEAD
 
     # update with remote master and update local master with remote changes
-    uwm = !CURRENT=$(git current) && git checkout master && git pull && git checkout $CURRENT && git merge master
+    uwm = !CURRENT=$(git current) && git checkout master && ( git pull || git checkout $CURRENT && echo "Failed updating with master." && exit 1) && git checkout $CURRENT && git merge master
 ```
