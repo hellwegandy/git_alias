@@ -1,6 +1,8 @@
 # git_alias
 Some of my most used git aliases
 
+Add the following lines to .gitconfig
+
 ```gitconfig
 [alias]
     d = diff --word-diff
